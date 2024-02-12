@@ -1,0 +1,25 @@
+{
+  "name": "simple-adhd-app-server",
+  "version": "1.0.0",
+  "description": "NodeJS Server for simple-adhd-app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincetrain/simple-adhd-app.git"
+  },
+  "author": "Vincent Tran",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/vincetrain/simple-adhd-app/issues"
+  },
+  "homepage": "https://github.com/vincetrain/simple-adhd-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.3",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0"
+  }
+}
