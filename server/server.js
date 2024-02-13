@@ -14,7 +14,7 @@ const mongo = require("./db/connection");
 app.listen(port, () => {
     mongo.establishConnection( function (callback) {
         if (callback) {
-            console.error("Unable to connect to MongoDB.");
+            console.error(callback);
         }
         else {
             console.log("Established connection with MongoDB.");
