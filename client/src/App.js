@@ -1,7 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { useState } from 'react';
+
 function App() {
+
+  const [userData, setData] = useState({
+    username: null,
+    password: null
+  });
+
   return (
     <div className="App">
       <header className="App-header">
