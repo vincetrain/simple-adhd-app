@@ -1,2 +1,2 @@
 # simple-adhd-app
-Simple ADHD App using MERN stack
+Simple ADHD app using MERN stack.
