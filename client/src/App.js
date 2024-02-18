@@ -21,6 +21,10 @@ function LoginPage() {
     <div className="loginDiv">
       <div id="leftSide">
       <h1> Test</h1>
+      <div id="slider">
+      <img src={logo} className="App-logo" alt="logo" />
+      </div>
+  
 
       </div>
     <div id="rightSide">
@@ -49,7 +53,8 @@ function App() {
     {
       path: "/",
       element:(
-        <Welcome />
+    
+        <LoginPage />
       )
       
     },
