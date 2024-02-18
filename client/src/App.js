@@ -4,22 +4,31 @@ import "./App.css";
 import { useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-function TempHeader() {
+
+function DisplayPage() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
+    <div className="left">
+     
+
+    </div>
+  )
+}
+function LoginPage() {
+  return (
+    
+    <div className="loginDiv">
+      <div id="leftSide">
+      <h1> Test</h1>
+
+      </div>
+    <div id="rightSide">
+      <h1> Log In</h1>
+    <input id="userbox" placeholder="Username"></input>
+
+    <input id="passbox" placeholder="Password"></input>
+
+    </div>
+    </div>
   )
 }
 
@@ -37,7 +46,14 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <TempHeader />
+      element:(
+        <>
+        <DisplayPage />
+      <LoginPage />
+     
+       </>
+      )
+      
     },
   ]);
 
@@ -46,6 +62,10 @@ function App() {
       <RouterProvider router={router} />
     </div>
   );
+
+
 }
+
+
 
 export default App;
