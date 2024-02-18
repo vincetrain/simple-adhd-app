@@ -3,6 +3,7 @@ import "./App.css";
 
 import { useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Welcome from "./pages/Welcome"
 
 
 function DisplayPage() {
@@ -13,6 +14,7 @@ function DisplayPage() {
     </div>
   )
 }
+
 function LoginPage() {
   return (
     
@@ -47,11 +49,7 @@ function App() {
     {
       path: "/",
       element:(
-        <>
-        <DisplayPage />
-      <LoginPage />
-     
-       </>
+        <Welcome />
       )
       
     },
