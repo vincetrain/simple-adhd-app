@@ -1,0 +1,9 @@
+@import 'colors';
+
+@mixin light-mode {
+  background-color: $background-light;
+}
+
+@mixin dark-mode {
+  background-color: $background-dark;
+}
