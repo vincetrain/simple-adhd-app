@@ -19,22 +19,15 @@ function LoginPage() {
   return (
     
     <div className="loginDiv">
-      <div id="leftSide">
-      <h1> Test</h1>
-      <div id="slider">
-      <img src={logo} className="App-logo" alt="logo" />
-      </div>
-  
 
-      </div>
     <div id="rightSide">
-      <h1> Log In</h1>
+      <h1 id="textLog"> a.ttention </h1>
     <input id="userbox" placeholder="Username"></input>
     <br></br>
     <input id="passbox" placeholder="Password"></input>
 
     <div id="logSign">
-    <button id="login"> login </button>
+    <button id="login"> log in </button>
 
     <button id="signup"> sign up </button>
     <br></br>
@@ -77,6 +70,7 @@ function App() {
 
 
 }
+
 
 
 

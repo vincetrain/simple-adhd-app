@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kenia&family=Patrick+Hand&family=Rubik+Mono+One&display=swap');
+
 
 body {
   margin: 0;
@@ -21,6 +23,7 @@ h1 {
   border: 2px solid black;
   border-radius: 5px;
   padding: 10px;
+  
   margin: 5px;
   padding-right: 60px;
 } 
@@ -38,21 +41,23 @@ h1 {
 #leftSide {
   text-align: center;
   justify-content: center;
-  margin-left: 10vw;
+  margin-left: 0vw;
   background-color: rgba(247, 243, 233, 0.522);
   border-radius: 15px;
+  padding-left: 10vw;
+  padding-right: 10vw;
    
   
 }
 
 #rightSide {
   background-color: rgb(247, 243, 233);
-  margin-left: 20vw;
+  
   padding: 10vh;
   border-radius: 15px;
   margin-top: 0;
-  padding-top: 15vh;
-  padding-bottom: 23vh;
+  padding-top: 12vh;
+  padding-bottom: 20vh;
   box-shadow: 0xpx 2px 5px rgb(247, 243, 233);
   
  
@@ -68,15 +73,19 @@ body {
 }
 
 #login, #signup {
-  background-color: rgb(0, 179, 255);
+  background-color: rgb(92, 235, 147);
   margin: 5px;
   border-radius: 5px;
   border-style: solid;
   padding: 10px;
   padding-right: 29px;
-  padding-left: 29px;
+  padding-left: 31px;
   font-size: 16px;
   font-weight: bold;
+}
+
+#login {
+  margin-bottom: 20px;
 }
 
 #login:hover, #signup:hover{
@@ -84,3 +93,101 @@ body {
 
 }
 
+#textLog {
+  margin-bottom: 10vh;
+  width: 15vw;
+  height: 5vw;
+  padding-left: 5px;
+  animation: changeText 6s linear infinite, bounce 3s ease-out infinite;
+    
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(251, 251, 251);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(94, 94, 94);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+}
+
+
+body {
+  background: linear-gradient(180deg, #89c3e3, #4676d4);
+  background-size: 400% 400%;
+
+  -webkit-animation: backdrop 4s ease infinite;
+  -moz-animation: backdrop 4s ease infinite;
+  animation: backdrop 4s ease infinite;
+}
+
+@-webkit-keyframes backdrop {
+  0%{background-position:0% 69%}
+  50%{background-position:100% 32%}
+  100%{background-position:0% 69%}
+}
+@-moz-keyframes backdrop {
+  0%{background-position:0% 69%}
+  50%{background-position:100% 32%}
+  100%{background-position:0% 69%}
+}
+@keyframes backdrop {
+  0%{background-position:0% 69%}
+  50%{background-position:100% 32%}
+  100%{background-position:0% 69%}
+}
+
+@keyframes changeText {
+  0% {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  25% {
+    font-family:'Times New Roman', Times, serif
+  }
+  50% {
+   
+      font-family: "Caveat", cursive;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    
+  }
+  75% {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transform:translateY(8px);
+  }
+  100% {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    transform:translateY(0px);
+  }
+}
+
+@keyframes bounce {
+
+  0% {
+    transform:translateY(0px);
+  } 
+  60% {
+    transform:translateY(6px);
+  }
+  100% {
+    transform:translateY(0px);
+  }
+
+}
