@@ -3,54 +3,11 @@ import "./App.css";
 
 import { useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Welcome from "./pages/Welcome"
+import Welcome from "./pages/Welcome/Welcome";
 
 
-function DisplayPage() {
-  return (
-    <div className="left">
-     
 
-    </div>
-  )
-}
 
-function LoginPage() {
-
-  const [darkMode, setDarkMode] = useState(false);
-
-  function toggleDark() {
-    setDarkMode(!darkMode);
-  }
-  
-  return (
-    
-    <div className={darkMode ? "loginDiv dark" : "loginDiv"}>
-       
-    <div id="rightSide">
-      
-      <h1 id="textLog"> a.ttention </h1>
-    <input id="userbox" placeholder="Username"></input>
-    <br></br>
-    <input id="passbox" placeholder="Password"></input>
-
-    <div id="logSign">
-    <button id="login"> log in </button>
-
-    <button id="signup"> sign up </button>
-    <br></br>
-    <br></br>
-    <a> forgot your password? </a>
-    <br></br>
-    <label className="switch">
-            <input type="checkbox" onChange={toggleDark}></input>
-            <span className="slider round"></span>
-          </label>
-    </div>
-    </div>
-    </div>
-  )
-}
 
 
 
@@ -70,7 +27,7 @@ function App() {
       path: "/",
       element:(
     
-        <LoginPage />
+        <Welcome />
       )
       
     },

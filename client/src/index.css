@@ -195,8 +195,10 @@ body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 30px;
+  width: 57px;
+  height: 32px;
+ 
+  top: 10vh;
 }
 
 
@@ -214,7 +216,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #000000;
+  background-color: #343434;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -222,10 +224,10 @@ body {
 .slider:before {
   position: absolute;
   content: "";
-  height: 23px;
-  width: 23px;
-  left: 4px;
-  bottom: 4px;
+  height: 24px;
+  width: 24px;
+  left: 3.5px;
+  bottom: 3.5px;
   background-color: rgb(247, 243, 233);
   -webkit-transition: .4s;
   transition: .4s;
@@ -233,7 +235,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: rgb(247, 243, 233);
+  background-color: #89c3e3
   
 }
 
@@ -243,12 +245,12 @@ input:checked + .slider:before {
 
 @keyframes animColor {
   from {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     
   } 
   to {
     
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
   }
 }
 input:focus + .slider {

@@ -2,10 +2,10 @@ import "./Welcome.scss";
 
 import Login from "../../components/Login/Login";
 
-export default function Welcome(user, setUserData, darkmode) {
+export default function Welcome(user, setUserData) {
   return (
     <div>
-      
+      <Login />
     </div>
   );
 }
