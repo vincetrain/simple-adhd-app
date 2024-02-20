@@ -16,11 +16,19 @@ function DisplayPage() {
 }
 
 function LoginPage() {
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  function toggleDark() {
+    setDarkMode(!darkMode);
+  }
+  
   return (
     
-    <div className="loginDiv">
-
+    <div className={darkMode ? "loginDiv dark" : "loginDiv"}>
+       
     <div id="rightSide">
+      
       <h1 id="textLog"> a.ttention </h1>
     <input id="userbox" placeholder="Username"></input>
     <br></br>
@@ -33,12 +41,18 @@ function LoginPage() {
     <br></br>
     <br></br>
     <a> forgot your password? </a>
-
+    <br></br>
+    <label className="switch">
+            <input type="checkbox" onChange={toggleDark}></input>
+            <span className="slider round"></span>
+          </label>
     </div>
     </div>
     </div>
   )
 }
+
+
 
 function App() {
 
