@@ -235,7 +235,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #89c3e3
+  background-color: #343434;
   
 }
 
@@ -285,4 +285,12 @@ input:checked + .slider:before {
   from {
     
   }
+}
+
+#navBar {
+  font-size:50px;
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  margin-left: 10px;
 }
