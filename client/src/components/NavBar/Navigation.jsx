@@ -1,9 +1,19 @@
 import "./Navigation.scss";
 
+import NavButton from "./NavButton.jsx";
+
+
+
 export default function Navigation(user, setUserData) {
+
+
+
+      
     return (
         <div>
-        <span id="navBar"  onChange="openNav()" >&#9776;</span>
+      <NavButton />
         </div>
     );
   }
+
+  

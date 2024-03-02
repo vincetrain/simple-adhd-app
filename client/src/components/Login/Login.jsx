@@ -10,7 +10,8 @@ export default function Login(user, setUserData, DarkMode) {
   }
 
   return(
-    <div className={darkMode ? "loginDiv dark" : "loginDiv"}>
+
+    <div id="main" className={darkMode ? "loginDiv dark" : "loginDiv"}>
       <div id="rightSide">
         <h1 id="textLog"> a.ttention </h1>
         <input id="userbox" placeholder="Username"></input>
@@ -30,5 +31,6 @@ export default function Login(user, setUserData, DarkMode) {
         </div>
       </div>
     </div>
+  
   );
 }

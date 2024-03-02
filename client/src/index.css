@@ -272,25 +272,9 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.dark {
-  background: linear-gradient(180deg, #343434, #151313);
-  background-size: 400% 400%;
-
-  -webkit-animation: backdrop 4s ease infinite;
-  -moz-animation: backdrop 4s ease infinite;
-  animation: backdrop 4s ease infinite;
-}
 
 @keyframes switch {
   from {
     
   }
-}
-
-#navBar {
-  font-size:50px;
-  cursor: pointer;
-  position: absolute;
-  left: 0px;
-  margin-left: 10px;
 }

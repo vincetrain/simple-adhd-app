@@ -4,6 +4,7 @@ import "./App.css";
 import { useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Welcome from "./pages/Welcome/Welcome";
+import Homepage from "./pages/Home/Homepage";
 
 
 
@@ -32,6 +33,12 @@ function App() {
       )
       
     },
+    {
+      path: "/home",
+      element:(
+        <Homepage />
+      )
+    }
  
   ]);
 
